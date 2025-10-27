@@ -1,0 +1,183 @@
+---
+import { Image } from "astro:assets";
+import Stripe from "./Stripe.astro";
+import Skyline from "../assets/logo.png";
+import GolfBanner from "../assets/golfbanner.png";
+import Tees from "../assets/tees.png";
+import Admiral from "../assets/5star.png";
+import Commander from "../assets/commander.png";
+import Raffle from "../assets/raffle.png";
+import Cash from "../assets/cash.png";
+---
+
+<div class="max-w-4xl mx-auto bg-white">
+  <!-- Top nautical stripe -->
+  <Stripe />
+
+  <!-- Header -->
+  <div class="px-5 pt-10 pb-5 bg-white">
+    <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4">
+      <h1 class="font-brush text-4xl md:text-6xl font-normal">Swing and Sip</h1>
+      <span
+        class="font-impact text-5xl md:text-7xl font-black text-gold tracking-wider"
+        style="text-shadow: 3px 3px 0px #D68910;">REGATTA</span
+      >
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="px-8 md:px-16 py-10 bg-white leading-relaxed">
+    <p class="font-bold text-lg mt-5 mb-4">Dear Community Partner,</p>
+
+    <p class="mb-5">
+      We are thrilled to announce the return of our most anticipated
+      gathering — The Skyline Women's Golf Fiesta Member Guest Invitational set
+      for March 24-25, 2026. This year, our signature "Swing & Sip Regatta"
+      theme promises even more fun, community spirit, and business visibility
+      than ever before. Join us as a sponsor and connect directly with an
+      audience that loves to celebrate and support local businesses like yours.
+      Our enthusiastic members and guests consistently look for ways to
+      reciprocate the generosity they see at our events—making this an
+      extraordinary opportunity to showcase your brand, build relationships, and
+      drive business in 2026.
+    </p>
+
+    <div class="font-bold my-8 text-lg">
+      Ways to Make a Splash as a Sponsor
+    </div>
+
+    <!-- Tee Sponsorship Section -->
+    <div class="my-8">
+      <div class="max-w-2xl mx-2 p-5 bg-gray-50 rounded-lg flex items-start gap-4">
+        <Image src={Tees} alt="Tee sponsorship" class="w-12 h-12 shrink-0 object-contain" />
+        <div>
+          <div class="block mb-2 text-lg font-bold text-navy-blue">Tee Sponsorship</div>
+          <p class="text-sm md:text-base text-gray-700">
+            Put your business front and center on the course, reaching every golfer:
+          </p>
+        </div>
+      </div>
+      
+      <!-- Indented sponsorship options with visual cards -->
+      <div class="space-y-4 max-w-2xl mx-2 mt-4">
+        <!-- Admiral's 5-Star -->
+        <div class="ml-6 md:ml-12 p-5 bg-gradient-to-r from-gold/10 to-transparent border-l-4 border-gold rounded-r-lg flex items-start gap-4">
+          <Image src={Admiral} alt="Tee sponsorship" class="w-12 h-12 shrink-0 object-contain" />
+          <div>
+            <strong class="block mb-2 text-gold-dark text-lg">
+              Admiral's 5-Star Sponsorship ($500)
+            </strong>
+            <p class="text-sm md:text-base text-gray-700">
+              Enjoy exclusive prime placement as one of only five sponsors with a solo
+              banner at a signature PAR 3 hole. Your company's name and logo shine on
+              the course, in our event program, and at the lively Cocktail Party on
+              March 24th.
+            </p>
+          </div>
+        </div>
+
+        <!-- Commander's -->
+        <div class="ml-6 md:ml-12 p-5 bg-gradient-to-r from-navy-blue/10 to-transparent border-l-4 border-navy-blue rounded-r-lg flex items-start gap-4">
+          <Image src={Commander} alt="Tee sponsorship" class="w-12 h-12 shrink-0 object-contain" />
+          <div>
+            <strong class="block mb-2 text-navy-blue text-lg">
+              Commander's Sponsorship ($250)
+            </strong>
+            <p class="text-sm md:text-base text-gray-700">
+              Make a strong impression with a branded sign at a tee box and your
+              business featured in the event program.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Sponsorship Options -->
+    <div class="my-8 space-y-4 max-w-2xl mx-2">
+      <div class="p-5 bg-gray-50 rounded-lg flex items-start gap-4">
+        <Image src={Raffle} alt="Tee sponsorship" class="w-12 h-12 shrink-0 object-contain" />
+        <div>
+          <strong class="block mb-2 text-lg">Raffle Donation</strong>
+          <p class="text-sm md:text-base text-gray-700">
+            Donate gift certificates or products for our always-popular final event
+            raffle. Guests love to discover new businesses through these exciting
+            prizes!
+          </p>
+        </div>
+      </div>
+
+      <div class="p-5 bg-gray-50 rounded-lg flex items-start gap-4">
+        <Image src={Cash} alt="Tee sponsorship" class="w-12 h-12 shrink-0 object-contain" />
+        <div>
+          <strong class="block mb-2 text-lg">Cash Donation</strong>
+          <p class="text-sm md:text-base text-gray-700">
+            Make a meaningful impact by contributing to help cover the event's
+            costs. Complete flexibility—your support at any level fuels our
+            celebration and your business recognition.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="font-bold  my-8 text-lg">
+      Let's Celebrate Local, Together
+    </div>
+
+    <p class=" mb-5">
+      Every sponsorship helps us create a vibrant, memorable event while giving
+      your business outstanding exposure. Checks can be made to "SWGA Fiesta"
+      mailed to Skyline Fiesta, Attn: Martha Blohm, 6098 N. Indian Trail,
+      Tucson, AZ 85750 or, if you'd like the convenience, we're happy to arrange
+      for pick-up at your business.
+    </p>
+
+    <p class=" mb-5">
+      Join us in making the 2026 Swing & Sip Regatta our best yet—for our
+      golfers, our community, and your business. Please reach out anytime with
+      questions or ideas—we love tailoring sponsorship experiences that work for
+      you. Thank you, in advance, for your partnership and for helping us make a
+      difference in Tucson.
+    </p>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="px-8 md:px-16 py-10 bg-white leading-relaxed">
+    <div class="mb-8">
+      <p class="font-bold text-lg mb-6">With gratitude,</p>
+      <p class="font-bold">Martha Blohm</p>
+      <p>2026 Committee Chair</p>
+      <p>
+        <a href="tel:520-548-9645" class="text-amber-500 hover:text-blue-500 hover:underline transition">
+          520-548-9645
+        </a>
+      </p>
+      <p>
+        <a href="mailto:swgafiesta@gmail.com?subject=SWGA%202026%20Regatta" class="text-blue-500 hover:text-amber-400 hover:underline transition">swgafiesta@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Golf course -->
+  <div class="pb-20">
+    <!-- Golf Course Illustration -->
+    <div class="relative w-full h-48 md:h-72 mx-auto rounded-2xl overflow-hidden">
+      <Image
+        src={GolfBanner}
+        alt="Golf course background image"
+        class="w-full h-full object-cover"
+      />
+
+      <!-- SKYLINE LOGO IMAGE - Centered at bottom -->
+      <div class="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-50">
+        <Image
+          src={Skyline}
+          alt="Skyline Country Club logo"
+          class="w-32 md:w-72 h-auto"
+        />
+      </div>
+    </div>
+  </div>
+
+</div>
